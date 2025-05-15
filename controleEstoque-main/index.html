@@ -16,7 +16,7 @@
         <p class="slogan">Gerencie seu estoque com facilidade</p>
     </header>
     <div id="notificacao">
-        <div class="notificacao-conteudo">
+        <div class="notificacao-conteudo" id="notificacao-conteudo">
             <i class="fas fa-check-circle"></i>
             <span id="notificacao-mensagem">Operação realizada com sucesso!</span>
         </div>
@@ -122,6 +122,27 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/2821/2821739.png" alt="Ilustração Inventário">
             </div>
         </section>
+        <section class="tabela-container">
+            <table id="tabela-produtos">
+                <thead>
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+            
+                <tbody id="produtos-lista">
+                    <!-- Aqui a informação é preenchida via js-->
+                </tbody>
+            </table>
+            <div id="sem-produtos" class="sem-produtos">
+                <img src="https://cdn-icons-png.flaticon.com/512/7486/7486754.png" alt="Nenhum produto">
+                <p>Nenhum produto encontrado.Adicione um novo produto para começar!</p>
+            </div>
+        </section> 
     </main>
 </body>
 <script src="./script.js"></script>
